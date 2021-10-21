@@ -34,8 +34,8 @@ public class UnorderedPeopleArray extends PeopleArray {
 	public Person find(String lastName) {
 //		throw new UnsupportedOperationException("Method not implemented");
 		if (nElems == 0) return null;
-		for(Person p : arr) {
-			if (p.getLastName().equals(lastName)) return p;
+		for (int i = 0; i < nElems; i++) {
+			if (lastName.equals(arr[i].getLastName())) return arr[i]; 
 		}
 		return null;
 		
